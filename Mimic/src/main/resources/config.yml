@@ -1,0 +1,81 @@
+# Oculta tu propio modelo a ti mismo (evita ver el interior del modelo en 1a persona)
+ocultar-a-si-mismo: true
+
+# Cada criatura es un ITEM con CustomModelData que tu resource pack convierte en modelo 3D.
+# material: item base (el que sobreescribes en el resource pack)
+# modelo: custom_model_data del modelo de la criatura
+# modelo-mano: custom_model_data de la "patita" que se ve en 1a persona (0 = ninguna). Va en la mano secundaria (bloqueada)
+# escala: tamano del modelo visible | escala-jugador: tamano real del jugador (hitbox/camara, 0.0625-16)
+# altura: ajuste vertical extra (los modelos del pack ya vienen con los pies en el suelo, deja 0.0) | giro: grados para orientar el modelo hacia delante
+# velocidad: multiplicador de velocidad | efectos: NOMBRE:nivel (0 = nivel I)
+criaturas:
+  nutria:
+    material: PAPER
+    modelo: 1001
+    modelo-mano: 1101
+    escala: 1.0
+    escala-jugador: 0.45
+    altura: 0.0
+    giro: 0
+    velocidad: 1.1
+    efectos: ["dolphins_grace:0", "water_breathing:0"]
+  capibara:
+    material: PAPER
+    modelo: 1002
+    modelo-mano: 1102
+    escala: 1.3
+    escala-jugador: 0.6
+    altura: 0.0
+    giro: 0
+    velocidad: 0.9
+    efectos: ["resistance:0"]
+  rana:
+    material: PAPER
+    modelo: 1003
+    modelo-mano: 1103
+    escala: 0.9
+    escala-jugador: 0.3
+    altura: 0.0
+    giro: 0
+    velocidad: 1.0
+    efectos: ["jump_boost:2", "slow_falling:0"]
+  oso:
+    material: PAPER
+    modelo: 1004
+    modelo-mano: 1104
+    escala: 1.8
+    escala-jugador: 1.0
+    altura: 0.0
+    giro: 0
+    velocidad: 0.95
+    efectos: ["strength:1", "resistance:1"]
+  gato:
+    material: PAPER
+    modelo: 1005
+    modelo-mano: 1105
+    escala: 0.9
+    escala-jugador: 0.4
+    altura: 0.0
+    giro: 0
+    velocidad: 1.2
+    efectos: ["jump_boost:1", "night_vision:0"]
+  conejo:
+    material: PAPER
+    modelo: 1006
+    modelo-mano: 1106
+    escala: 0.8
+    escala-jugador: 0.35
+    altura: 0.0
+    giro: 0
+    velocidad: 1.3
+    efectos: ["jump_boost:3"]
+  pinguino:
+    material: PAPER
+    modelo: 1007
+    modelo-mano: 1107
+    escala: 1.1
+    escala-jugador: 0.7
+    altura: 0.0
+    giro: 0
+    velocidad: 0.9
+    efectos: ["dolphins_grace:0"]
